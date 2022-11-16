@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the Home Page!</h1>
+    <p>Please select one of the options from below!</p>
+    <a href="{%url 'flights' %}">View flight schedule</a>
+    <a href="{% url 'airport_login' %}">Login as airport employee</a>
+    <a href="{% url 'airline_login' %}">Login as airline employee</a>
+</body>
+</html>
