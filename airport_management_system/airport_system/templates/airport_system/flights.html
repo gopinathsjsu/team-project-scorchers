@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>Flights Schedule</h1>
-    <table>
-        <tr>
+    <table cellspacing="3" border="1">
+        <tr bgcolor="skyblue">
             <th>Airline</th>
             <th>Status</th>
             <th>Baggage Claim</th>
@@ -18,7 +18,7 @@
             <th>Time</th>
         </tr>
         {% for item in details %}
-        <tr>
+        <tr bgcolor="lightgrey">
             <td>{{ item.airline.name }}</td>
             <td>{{ item.status }}</td>
             <td>{{ item.baggage_claim.label }}</td>
@@ -27,6 +27,12 @@
         </tr>
         {% endfor %}
     </table>
+    <script>
+        if(!window.opener){
+            window.open('http://127.0.0.1:8000/flights/')
+        }
+        
+    </script>
     
 </body>
 </html>

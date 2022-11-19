@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is the Home Page!</h1>
+    <h1>Welcome! {{ user.username}}</h1>
     <p>Please select one of the options from below!</p>
-    <a href="{%url 'flights' %}">View flight schedule</a><br>
-    <a href="{% url 'airport_login' %}">Login as airport employee</a><br>
-    <a href="{% url 'airline_login' %}">Login as airline employee</a><br>
+    <a href="{%url 'airline_add_flight' %}">Add a new flight of (airline) airlines</a><br>
+    <a href="{% url 'airline_update_flight' %}">Update a scheduled flight</a><br>
+
 </body>
 </html>

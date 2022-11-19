@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport edit</title>
+</head>
+<body>
+    <h1>Airport emp view page</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+    <table cellspacing="3" border="1">
+        <tr bgcolor="skyblue">
+            <th>Gate</th>
+            <th>Active</th>
+        </tr>
+        {% for form in formset %}
+        {{ form.id }}
+        <tr bgcolor="lightgrey">
+            <td>{{ form.instance.label }}</td>
+            <td>{{ form.active }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>

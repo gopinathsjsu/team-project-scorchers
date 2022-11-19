@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Page to edit the baggage carousel assignments</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+    <table cellspacing="3" border="1">
+        <tr bgcolor="skyblue">
+            <th>Number</th>
+            <th>Airline</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Baggage Carousel</th>
+        </tr>
+        {% for form in formset %}
+        {{ form.number }}
+        <tr bgcolor="lightgrey">
+            <td>{{ form.instance.number }}</td>
+            <td>{{ form.instance.airline }}</td>
+            <td>{{ form.instance.status }}</td>
+            <td>{{ form.instance.schedule_time }}</td>
+            <td>{{ form.baggage_claim }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>

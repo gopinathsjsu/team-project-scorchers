@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline edit</title>
+</head>
+<body>
+    <h1>Welcome {{ user.username }}</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+    <table cellspacing="3" border="1">
+        <tr bgcolor="skyblue">
+            <th>Flight number</th>
+            <th>Status</th>
+            <th>Time</th>
+        </tr>
+        {% for form in formset %}
+        {{ form.number }}
+        <tr bgcolor="lightgrey">
+            <td>{{ form.instance.number }}</td>
+            <td>{{ form.instance.status }}</td>
+            <td>{{ form.schedule_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
