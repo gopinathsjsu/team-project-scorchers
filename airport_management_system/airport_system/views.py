@@ -64,7 +64,7 @@ def airline_login(request):
     return render(request, 'airport_system/airline_login.html', context)
 
 def flights(request):
-    details = models.Flight.objects.all().order_by('status')
+    details = models.Flight.objects.filter(Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=2))).order_by('status')
     #arr_ = models.flight.objects.filter(status='Arriving')
     #dep_ = models.flight.objects.filter(status='Departure')
     context = {'details' : details, }
@@ -124,6 +124,7 @@ def airport_edit_gates(request):
         if formset.is_valid():
             print('valid')
             formset.save()
+            management.call_command('updategates')
             return redirect('airport_edit_gates')
 
         print(formset)
