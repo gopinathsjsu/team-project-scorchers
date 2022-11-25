@@ -8,10 +8,19 @@ from django.core import management
 from datetime import datetime, timedelta
 from django.utils import timezone
 from django.db.models import Q
-from .forms import AddFlight
+from .forms import AddFlight, FlightOptions
 
 def home(request):
     return render(request, 'airport_system/home.html')
+
+def flights_options(request):
+    if request.method == 'POST':
+        hours = request.POST['hours']
+        #print('Hours in flight_options', hours)
+        return redirect('flights', hours)
+    form = FlightOptions()
+    context = {'form' : form}
+    return render(request, 'airport_system/flights_options.html', context)
 
 def airport_login(request):
     if request.method == 'POST':
@@ -63,8 +72,9 @@ def airline_login(request):
     context = {'form' : form, 'airline_list' : airline_list}
     return render(request, 'airport_system/airline_login.html', context)
 
-def flights(request):
-    details = models.Flight.objects.filter(Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=2))).order_by('status')
+def flights(request, hours):
+    #print('Hours:', hours)
+    details = models.Flight.objects.filter(Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=hours))).order_by('status')
     #arr_ = models.flight.objects.filter(status='Arriving')
     #dep_ = models.flight.objects.filter(status='Departure')
     context = {'details' : details, }

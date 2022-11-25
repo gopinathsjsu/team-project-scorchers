@@ -8,4 +8,5 @@ class AddFlight(forms.Form):
     status = forms.ChoiceField(choices=(('Arrival','Arrival'), ('Departure','Departure')))
     schedule = forms.DateTimeField(widget=DateTimeInput)
     
-
+class FlightOptions(forms.Form):
+    hours = forms.IntegerField(max_value=8, min_value=1)

@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airport employee login</title>
+    <title>Flights display options</title>
 </head>
 <body>
-    <h1> Airport Login</h1>
-    {{ message }}
-    <form method="POST">
+    <h1>Please select the interval of flights scheduled</h1>
+    <form id="flights_options" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Login">
-
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
