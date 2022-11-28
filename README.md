@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 # Airport Management Sysytem
 
 ## Procedure to run the project:
@@ -88,6 +88,3 @@ Prithvi : Backend, Database design, Front end, API integration and testing.
 - Every teammate has the freedom to propose a new feature, express their point of view and prespectives without the fear of recieving harsh criticism from
   teammates
 =======
-# team-project-scorchers
-team-project-scorchers created by GitHub Classroom
->>>>>>> Stashed changes
