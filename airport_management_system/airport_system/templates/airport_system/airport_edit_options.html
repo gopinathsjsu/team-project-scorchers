@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
     <h1>Welcome! {{ user.username}}</h1>
     <p>Please select one of the options from below!</p>
     <a href="{%url 'airport_edit_gates' %}">Update Gates</a><br>
     <a href="{% url 'airport_edit_baggage' %}">Assign baggage corousel</a><br>
-
+    </center>
     
 </body>
 </html>

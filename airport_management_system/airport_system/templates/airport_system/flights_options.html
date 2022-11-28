@@ -7,11 +7,13 @@
     <title>Flights display options</title>
 </head>
 <body>
+    <center>
     <h1>Please select the interval of flights scheduled</h1>
     <form id="flights_options" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="submit">
     </form>
+    </center>
 </body>
 </html>
