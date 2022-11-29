@@ -147,7 +147,7 @@ def airport_edit_gates(request):
 def airport_edit_options(request):
     return render(request, 'airport_system/airport_edit_options.html')
 
-def airport_edit_baggage(request):
+def airport_edit_baggage_old(request):
     arriv_flights = models.Flight.objects.filter(status='Arriving')
     bag = []
     for obj in arriv_flights:
@@ -167,6 +167,36 @@ def airport_edit_baggage(request):
             return redirect('airport_edit_baggage')
     else:
         formset = FlightFormSet(queryset=models.Flight.objects.filter(status='Arriving', schedule_time__lt=timezone.now()+timedelta(hours=2)))
+    
+    context = {'formset' : formset}
+
+    return render(request, 'airport_system/airport_edit_baggage.html', context)
+
+def airport_edit_baggage(request):
+    arriv_flights = models.Flight.objects.filter(status='Arriving')
+    bag = []
+    for obj in arriv_flights:
+        bag.append(obj.baggage_claim)
+    choices=[]
+    avail_bag = models.BaggageClaim.objects.exclude(label__in = bag)
+    for obj in avail_bag:
+        choices.append((obj.label,obj.label))
+
+    FlightFormSet = modelformset_factory(models.Flight, fields={'number', 'baggage_claim'}, extra=0, widgets={'number':forms.HiddenInput(), 'baggage_claim':forms.Select(choices=tuple(choices))})
+
+    if request.method == 'POST':
+        formset = FlightFormSet(request.POST, queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
+        if formset.is_valid():
+            print('valid formset')
+            formset.save()
+            return redirect('airport_edit_baggage')
+        else:
+            message = 'Error:Please enter unique values!'
+            formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
+            context = {'message': message,'formset':formset}
+            return render(request, 'airport_system/airport_edit_baggage.html', context)
+    else:
+        formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
     
     context = {'formset' : formset}
 

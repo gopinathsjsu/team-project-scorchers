@@ -23,7 +23,7 @@ class Flight(models.Model):
     gate = models.ForeignKey('Gate', on_delete=models.CASCADE, null=True, blank=True)
     airline = models.ForeignKey('Airline', on_delete=models.CASCADE)
     schedule_time = models.DateTimeField()
-    baggage_claim = models.ForeignKey('BaggageClaim', null=True, blank=True, on_delete=models.CASCADE)
+    baggage_claim = models.ForeignKey('BaggageClaim', null=True, blank=True, on_delete=models.CASCADE, unique=True)
 
     def __str__(self):
         return self.number
