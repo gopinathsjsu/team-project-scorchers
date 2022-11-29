@@ -17,6 +17,7 @@
 <body>
     <center>
     <h1>Page to edit the baggage carousel assignments</h1>
+    {{ message }}
     <form method="POST">
         {% csrf_token %}
         {{ formset.management_form }}

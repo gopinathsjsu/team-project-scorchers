@@ -185,18 +185,18 @@ def airport_edit_baggage(request):
     FlightFormSet = modelformset_factory(models.Flight, fields={'number', 'baggage_claim'}, extra=0, widgets={'number':forms.HiddenInput(), 'baggage_claim':forms.Select(choices=tuple(choices))})
 
     if request.method == 'POST':
-        formset = FlightFormSet(request.POST, queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
+        formset = FlightFormSet(request.POST, queryset=models.Flight.objects.filter((Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
         if formset.is_valid():
             print('valid formset')
             formset.save()
             return redirect('airport_edit_baggage')
         else:
             message = 'Error:Please enter unique values!'
-            formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
+            formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
             context = {'message': message,'formset':formset}
             return render(request, 'airport_system/airport_edit_baggage.html', context)
     else:
-        formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time_gt = timezone.now()) & Q(schedule_time_lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
+        formset = FlightFormSet(queryset=models.Flight.objects.filter((Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=2))), status='Arriving'))
     
     context = {'formset' : formset}
 
