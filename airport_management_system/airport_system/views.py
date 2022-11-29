@@ -77,7 +77,7 @@ def flights(request, hours):
     details = models.Flight.objects.filter(Q(schedule_time__gt = timezone.now()) & Q(schedule_time__lt=timezone.now()+timedelta(hours=hours))).order_by('status')
     #arr_ = models.flight.objects.filter(status='Arriving')
     #dep_ = models.flight.objects.filter(status='Departure')
-    context = {'details' : details, }
+    context = {'details' : details, 'hours': hours }
     return render(request, 'airport_system/flights.html', context)
 
 def airline_update_flight(request):
