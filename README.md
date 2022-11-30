@@ -16,7 +16,7 @@ Frontend - React JS
 
 Backend - Python - DJango
 
-Database - PostgreSQL
+Database - SQLite
 
 REST API: Postman (for testing developed APIs)
 
