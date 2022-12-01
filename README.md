@@ -19,17 +19,29 @@
 
 ## Contribution :
 
-1. Shanmukh - Backend, cloud deployment
-2. Roopa - Database, Backend, Wireframes
-3. Harsha - Frontend, Scrum master
-4. Prithvi Raj - Frontend, Documentation
-
-Front end, API integration and testing.
+1. Shanmukh - Backend, cloud deployment, scrum master, Documentation, integration
+2. Roopa - Database design, Backend, Wireframes, Data for tables
+3. Harsha - Frontend, Testing, Documentation
+4. Prithvi Raj - Frontend, Documentation, Database design
 
 
 
 ## Procedure to run the project:
 
+### Pre-requisites to run the project:
+1. Database browser for SQLite. You can download this here - https://sqlitebrowser.org/dl/
+2. Python v3.6.7 or higher. (This project is built in python v3.6.7)
+3. Code editor like Visual Studio code. You can download the vs code here - https://code.visualstudio.com/download
+
+After meeting all the pre-requisites mentioned above please follow the below steps to run the code.
+1. Download/clone the project repository.
+2. Open the command prompt in the /airport_management_system/ system directory.
+3. Create a virtual environment and install django here. Please follow this link to do so - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment
+4. Once this is done you are good to go and can explore the application by typing the command 
+> python manage.py runserver
+5. This will give you an IP address. Copy and paste this in the web browser and the home.html gets rendered.
+
+#### Below are the steps to navigate through the website.
 ### Steps to run Frontend
 
 
