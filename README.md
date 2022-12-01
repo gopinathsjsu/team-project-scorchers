@@ -7,8 +7,8 @@
 
 1. Shanmukh Krishna - 016005743
 2. Roopa Chiluvuri - 016005795
-3. Sree Harsha
-4. Prithvi Raj
+3. Sai Sree Harsha Chimbili - 015428179
+4. Venkata Prithvi Raj Namburi - 015944994
 
 ## Tech Stack : 
 
@@ -41,13 +41,6 @@ After meeting all the pre-requisites mentioned above please follow the below ste
 > python manage.py runserver
 5. This will give you an IP address. Copy and paste this in the web browser and the home.html gets rendered.
 
-#### Below are the steps to navigate through the website.
-### Steps to run Frontend
-
-
-### Steps to run Backend
-
-
 
 ## Sprint Sheet
 
@@ -56,7 +49,7 @@ After meeting all the pre-requisites mentioned above please follow the below ste
 
 ## Scrum Meetings Schedule:
 
-Friday 7:30 pm PST
+Monday 7:30 pm PST
 
 ## Feature Set
 
