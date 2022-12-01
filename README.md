@@ -10,6 +10,24 @@
 3. Sree Harsha
 4. Prithvi Raj
 
+## Tech Stack : 
+
+• Frontend - 
+• Backend - 
+• Database - 
+• Deployment - 
+
+## Contribution :
+
+1. Shanmukh - Backend, cloud deployment
+2. Roopa - Database, Backend, Wireframes
+3. Harsha - Frontend, Scrum master
+4. Prithvi Raj - Frontend, Documentation
+
+Front end, API integration and testing.
+
+
+
 ## Procedure to run the project:
 
 ### Steps to run Frontend
@@ -19,27 +37,10 @@
 
 
 
-## Tools and Languages:
+## Sprint Sheet
 
-Frontend - React JS
+## Project Journal
 
-Backend - Python - DJango
-
-Database - SQLite
-
-REST API: Postman (for testing developed APIs)
-
-Cloud - AWS EC2
-
-## Team Members
-
-Shanmukh
-
-Sree Harsha
-
-Roopa
-
-Prithvi Raj
 
 ## Scrum Meetings Schedule:
 
@@ -47,17 +48,8 @@ Friday 7:30 pm PST
 
 ## Feature Set
 
-....
+## Design Decisons
 
-## Work Distribution
-
-Shanmukh : Backend , Database design, Frontend , API integration and testing
-
-Sree Harsha : Backend, Database design, Frontend, API integration and testing
-
-Roopa : Backend, Database design, Frontend, API integration and testing
-
-Prithvi : Backend, Database design, Front end, API integration and testing.
 
 # XP Core Values that were Implemented during the project developement
 
