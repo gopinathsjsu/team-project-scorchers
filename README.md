@@ -1,7 +1,14 @@
 
 # Airport Management Sysytem
 
-### team-project-scorchers
+202 - team-project-scorchers
+
+## Team Members :
+
+1. Shanmukh Boddu - 016005743
+2. Roopa Chiluvuri - 016005795
+3. Sree Harsha
+4. Prithvi Raj
 
 ## Procedure to run the project:
 
