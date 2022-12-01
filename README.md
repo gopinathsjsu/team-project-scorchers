@@ -5,7 +5,7 @@
 
 ## Team Members :
 
-1. Shanmukh Boddu - 016005743
+1. Shanmukh Krishna - 016005743
 2. Roopa Chiluvuri - 016005795
 3. Sree Harsha
 4. Prithvi Raj
