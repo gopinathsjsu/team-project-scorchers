@@ -13,8 +13,11 @@
 ## Tech Stack : 
 
 • Frontend - HTML, CSS, Java script
+
 • Backend - Python (Django)
+
 • Database - SQLite
+
 • Deployment - pythonanywhere 
 
 ## Contribution :
