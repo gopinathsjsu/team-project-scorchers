@@ -64,6 +64,8 @@ Monday 7:30 pm PST
 
 ## Deployment Diagram
 
+![Deployment Diagram](https://user-images.githubusercontent.com/100038612/205229441-9e2cb906-b043-43ca-af56-338b567a0a4a.jpg)
+
 ## Component Diagram
 
 ![Component Diagram](https://user-images.githubusercontent.com/100038612/205229008-b3695803-4ea6-4da6-85f9-dab0c9c00b3d.jpg)
