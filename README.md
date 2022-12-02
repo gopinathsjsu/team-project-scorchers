@@ -56,7 +56,7 @@ Monday 7:30 pm PST
 
 ## Project Board
 
-## XP Values
+
 
 ## Architecture Diagram
 
@@ -72,6 +72,8 @@ Monday 7:30 pm PST
 ## Design Decisons
 
 ### Database
+
+
 
 ### Backend
 
@@ -95,6 +97,13 @@ Monday 7:30 pm PST
 * Submit the form to add a new flight
 * Select update a scheduled flight
 * Can update the date & time of scheduled flights  
+
+# Home Page 
+
+![image](https://user-images.githubusercontent.com/100038612/205188875-1a6a8d6e-4750-4180-a0e3-eed364cae879.png)
+
+# 
+
 
 
 
