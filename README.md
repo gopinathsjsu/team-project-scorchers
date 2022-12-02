@@ -66,7 +66,11 @@ Monday 7:30 pm PST
 
 ## Component Diagram
 
+![Component Diagram](https://user-images.githubusercontent.com/100038612/205229008-b3695803-4ea6-4da6-85f9-dab0c9c00b3d.jpg)
+
 ## Use Case Diagram
+
+![Usecase Diagram](https://user-images.githubusercontent.com/100038612/205228966-9f3b9ad1-036a-48e3-ae59-edef55e74c39.jpeg)
 
 ## Design Decisons
 
