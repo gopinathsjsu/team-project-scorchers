@@ -46,6 +46,8 @@ After meeting all the pre-requisites mentioned above please follow the below ste
 
 ## Sprint Sheet
 
+https://github.com/gopinathsjsu/team-project-scorchers/blob/master/Scorchers%20Sprint%20sheet.xlsx
+
 ## Project Journal
 
 https://github.com/gopinathsjsu/team-project-scorchers/tree/master/Project%20Journals
