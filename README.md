@@ -18,7 +18,7 @@
 
 • Database - SQLite
 
-• Deployment - pythonanywhere 
+• Deployment - pythonanywhere  ( http://shanmukh.pythonanywhere.com/ )
 
 ## Contribution :
 
@@ -62,7 +62,6 @@ Monday 7:30 pm PST
 
 ![Architecture Diagram](https://user-images.githubusercontent.com/100038612/205186710-146be828-ed07-48d3-bb40-03ce43185adf.png)
 
-
 ## Deployment Diagram
 
 ## Component Diagram
@@ -73,13 +72,34 @@ Monday 7:30 pm PST
 
 ### Database
 
-
+Reasons to choose a SQLite Database
+- SQLite databases can be queried and stored in a structured manner. The data retrieval is much more robust and it shows higher performance rate.
+- The application file is portable across all operating systems, 32-bit and 64-bit and big- and little-endian architectures.
+- Content can be accessed and updated using powerful SQL queries, greatly reducing the complexity of the application code.
+- Content stored in an SQLite database is more likely to be recoverable decades in the future, long after all traces of the original application have been lost.
+  Data lives longer than code.
 
 ### Backend
 
+Reasons to choose Django web framework
+- Django has the Model View Template Architecture which is a software design pattern. This web framework  is written in python.
+- When we create web applications in Django, it makes sure that developers don’t commit any mistakes related to security.
+- Django is scalable in nature and has ability to quickly and flexibly switch from small to large scale application project.
+- It allows to build applications for different-different domains. Main features of Django are rapid development, fully loaded, vast and supported community.
+- We wanted to do our project in Python, so we decided Django as Backend and pythonanywhere for cloud deployment.
+
 ### Frontend
 
+Reasons to choose HTML, CSS, JavaScript
+- For better user experience we are using the most common frontend languages - HTML, CSS, JavaScript for our project.
+
 ## Deployment
+
+Reasons to choose pythonanywhere for cloud deployment
+- Pythonanywhere cloud provider is the best suitable one for the frameworks like Django
+- It has extra flexibility to work from anywhere
+- It provides lots of pre-installed python libraries which makes our work more smooth
+
 
 ## Feature Set
 
