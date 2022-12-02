@@ -5,7 +5,7 @@ class DateTimeInput(forms.DateTimeInput):
 
 class AddFlight(forms.Form):
     number = forms.CharField(max_length=30)
-    status = forms.ChoiceField(choices=(('Arrival','Arrival'), ('Departure','Departure')))
+    status = forms.ChoiceField(choices=(('Arriving','Arriving'), ('Departure','Departure')))
     schedule = forms.DateTimeField(widget=DateTimeInput)
     
 class FlightOptions(forms.Form):

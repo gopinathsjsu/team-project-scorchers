@@ -21,6 +21,7 @@
     <table cellspacing="3" border="1">
         <tr bgcolor="skyblue">
             <th>Airline</th>
+            <th>Number</th>
             <th>Status</th>
             <th>Baggage Claim</th>
             <th>Gate</th>
@@ -29,6 +30,7 @@
         {% for item in details %}
         <tr bgcolor="lightgrey">
             <td>{{ item.airline.name }}</td>
+            <td>{{ item.number }}</td>
             <td>{{ item.status }}</td>
             <td>{{ item.baggage_claim.label }}</td>
             <td>{{ item.gate.label }}</td>

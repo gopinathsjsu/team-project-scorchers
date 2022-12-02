@@ -81,7 +81,9 @@ def flights(request, hours):
     return render(request, 'airport_system/flights.html', context)
 
 def airline_update_flight(request):
-    FlightFormSet = modelformset_factory(models.Flight, fields=('number','schedule_time'), extra=0, widgets={'number': forms.HiddenInput(), 'schedule_time' : forms.TextInput(attrs={'type':'datetime-local'})})
+    #FlightFormSet = modelformset_factory(models.Flight, fields=('number','schedule_time'), extra=0, widgets={'number': forms.HiddenInput(), 'schedule_time' : forms.TextInput(attrs={'type':'datetime-local'})})
+    FlightFormSet = modelformset_factory(models.Flight, fields=('number','schedule_time'), extra=0, widgets={'number': forms.HiddenInput(), 'schedule_time' : forms.DateTimeInput()})
+
     if request.method == 'POST':
         formset = FlightFormSet(request.POST, queryset=models.Flight.objects.filter(airline=request.user.airlineemp.airline))
         #print(formset)
