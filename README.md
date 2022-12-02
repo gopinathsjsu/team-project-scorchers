@@ -48,6 +48,8 @@ After meeting all the pre-requisites mentioned above please follow the below ste
 
 ## Project Journal
 
+https://github.com/gopinathsjsu/team-project-scorchers/tree/master/Project%20Journals
+
 ## Scrum Meetings :
 
 Monday 7:30 pm PST
@@ -57,6 +59,9 @@ Monday 7:30 pm PST
 ## XP Values
 
 ## Architecture Diagram
+
+![Architecture Diagram](https://user-images.githubusercontent.com/100038612/205186710-146be828-ed07-48d3-bb40-03ce43185adf.png)
+
 
 ## Deployment Diagram
 
