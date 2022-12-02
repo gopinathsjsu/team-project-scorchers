@@ -1,5 +1,5 @@
 
-# Airport Management Sysytem
+# Airport Management System
 
 202 - team-project-scorchers
 
