@@ -58,6 +58,7 @@ Monday 7:30 pm PST
 
 ## Project Board
 
+https://github.com/orgs/gopinathsjsu/projects/60/views/1
 
 
 ## Architecture Diagram
