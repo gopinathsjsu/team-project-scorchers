@@ -100,7 +100,7 @@ Monday 7:30 pm PST
 
 # Home Page 
 
-![image](https://user-images.githubusercontent.com/100038612/205188875-1a6a8d6e-4750-4180-a0e3-eed364cae879.png)
+![image](https://user-images.githubusercontent.com/100038612/205189983-07aacb98-c366-4ceb-a1a7-df388ed23304.png)
 
 # Flight Options
 
