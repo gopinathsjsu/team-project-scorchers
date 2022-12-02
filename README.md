@@ -102,7 +102,49 @@ Monday 7:30 pm PST
 
 ![image](https://user-images.githubusercontent.com/100038612/205188875-1a6a8d6e-4750-4180-a0e3-eed364cae879.png)
 
-# 
+# Flight Options
+
+![image](https://user-images.githubusercontent.com/100038612/205189232-b11efa8c-6dd9-42b4-a029-93831defde76.png)
+
+# Flight Schedule
+
+![image](https://user-images.githubusercontent.com/100038612/205189281-6ec215ac-59af-4e31-9f46-b6b7828d2778.png)
+
+# Login as Airport Employee
+
+![image](https://user-images.githubusercontent.com/100038612/205189363-b700028d-f809-4d93-a89f-0860fe751395.png)
+
+# Airport Edit Options
+
+![image](https://user-images.githubusercontent.com/100038612/205189414-ba2d85ad-08af-4362-86ef-509548e63194.png)
+
+# Airport Edit Gates
+
+![image](https://user-images.githubusercontent.com/100038612/205189496-6761377a-ca9d-4ec9-9e1f-0e742e52afb8.png)
+
+# Airport Edit Baggage carousel assignments
+
+![image](https://user-images.githubusercontent.com/100038612/205189631-184a4b5e-76a8-43d8-8b09-8dcc270ef412.png)
+
+# Airline Login 
+
+![image](https://user-images.githubusercontent.com/100038612/205189687-41a6d265-b16b-40e7-8296-ea1d97b8ccb3.png)
+
+# Airline Edit Options
+
+![image](https://user-images.githubusercontent.com/100038612/205189730-eee48aa1-12ce-4ca4-8ec6-65ca17a13dac.png)
+
+# Airline Add Flight 
+
+![image](https://user-images.githubusercontent.com/100038612/205189799-f583b48d-709f-4ed8-b578-f465b05e26c4.png)
+
+# Airport Update Flight
+
+![image](https://user-images.githubusercontent.com/100038612/205189861-7b53c6b3-5eaa-4025-ab15-ae32589fd331.png)
+
+
+
+
 
 
 
